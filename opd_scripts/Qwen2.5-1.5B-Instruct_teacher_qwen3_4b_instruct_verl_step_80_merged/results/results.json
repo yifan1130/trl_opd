@@ -1,0 +1,20 @@
+{
+    "config_general": {
+        "model_name": "/data/cxu/experiments/opd_countdown_qwen2.5_1.5b_teacher_qwen3_4b_onlyclip/global_step_80/countdown_qwen2.5_1.5b_merged",
+        "model_revision": "main",
+        "dataset_name": "HuggingFaceTB/Countdown-Task-GOLD",
+        "dataset_split": "test",
+        "dataset_config": "test",
+        "num_samples": 500,
+        "num_generations": 4,
+        "temperature": 0.7,
+        "top_k": 50,
+        "top_p": 0.95
+    },
+    "results": {
+        "all": {
+            "pass@1:4": 0.697,
+            "pass@4:1": 0.772
+        }
+    }
+}

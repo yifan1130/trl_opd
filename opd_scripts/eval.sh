@@ -1,0 +1,7 @@
+# CUDA_VISIBLE_DEVICES=0,1,2,3 python evaluation.py  --model_name_or_path Qwen/Qwen2.5-1.5B-Instruct --output_dir ./results
+# CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python evaluation.py  --model_name_or_path Qwen/Qwen3-4B-Instruct-2507 --output_dir ./results_qwen3_4b_instruct
+# CUDA_VISIBLE_DEVICES=4,5,6,7 python evaluation.py  --model_name_or_path /data/cxu/trl_opd/outputs/gkd-vllm-countdown-qwen3-4b-to-qwen2.5-1.5b/checkpoint-80 --output_dir ./Qwen2.5-1.5B-Instruct_teacher_qwen3_4b_instruct_student_step_80
+# CUDA_VISIBLE_DEVICES=4,5,6,7 python evaluation.py  --model_name_or_path /data/cxu/trl_opd/outputs/gkd-vllm-countdown-qwen3-4b-to-qwen2.5-1.5b/checkpoint-400 --output_dir ./Qwen2.5-1.5B-Instruct_teacher_qwen3_4b_instruct_student_step_400
+
+# CUDA_VISIBLE_DEVICES=0,1,2,3 python evaluation.py  --model_name_or_path /data/cxu/experiments/opd_countdown_qwen2.5_1.5b_teacher_qwen3_4b/global_step_80/countdown_qwen2.5_1.5b_merged --output_dir ./Qwen2.5-1.5B-Instruct_teacher_qwen3_4b_instruct_verl_step_80_merged_clip+mask
+CUDA_VISIBLE_DEVICES=4,5,6,7 python evaluation.py  --model_name_or_path /data/cxu/experiments/opd_countdown_qwen2.5_1.5b_teacher_qwen3_4b_onlyclip/global_step_400/countdown_qwen2.5_1.5b_merged --output_dir ./Qwen2.5-1.5B-Instruct_teacher_qwen3_4b_instruct_verl_step_400_merged

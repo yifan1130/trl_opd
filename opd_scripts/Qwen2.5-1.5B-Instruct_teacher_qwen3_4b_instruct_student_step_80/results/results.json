@@ -1,0 +1,20 @@
+{
+    "config_general": {
+        "model_name": "/data/cxu/trl_opd/outputs/gkd-vllm-countdown-qwen3-4b-to-qwen2.5-1.5b/checkpoint-80",
+        "model_revision": "main",
+        "dataset_name": "HuggingFaceTB/Countdown-Task-GOLD",
+        "dataset_split": "test",
+        "dataset_config": "test",
+        "num_samples": 500,
+        "num_generations": 4,
+        "temperature": 0.7,
+        "top_k": 50,
+        "top_p": 0.95
+    },
+    "results": {
+        "all": {
+            "pass@1:4": 0.573,
+            "pass@4:1": 0.624
+        }
+    }
+}
